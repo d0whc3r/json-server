@@ -1,3 +1,5 @@
 src
 __tests__
 __fixtures__
+.idea
+.history
