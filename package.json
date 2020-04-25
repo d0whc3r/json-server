@@ -1,9 +1,11 @@
 {
-  "name": "json-server",
-  "version": "0.16.1",
+  "name": "@d0whc3r/json-server",
+  "version": "0.17.0",
   "description": "Get a full fake REST API with zero coding in less than 30 seconds",
   "main": "./lib/server/index.js",
-  "bin": "./lib/cli/bin.js",
+  "bin": {
+    "mod-json-server": "./lib/cli/bin.js"
+  },
   "scripts": {
     "test": "npm run build && cross-env NODE_ENV=test jest && npm run lint",
     "start": "babel-node -- src/cli/bin db.json -r routes.json",
